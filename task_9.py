@@ -16,11 +16,17 @@ print(nok(num_1, num_2))
 # 2
 print("Второе задание")
 num = int(input("Введите число: "))
+lst_simple = []
 for i in range(1, num+1):
-    print(i)
-# второе решение со списком
-list_num = [i for i in range(1, num+1)]
-print(list_num)
+    res = True
+    if i != 1:
+        for k in range(2, i):
+            if i % k == 0:
+                res = False
+    if res:
+        print(i)
+        lst_simple.append(i)
+print(lst_simple)
 # 3
 print("Третье задание")
 n = int(input("Введите число: "))
