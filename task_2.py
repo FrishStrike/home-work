@@ -1,20 +1,25 @@
 # 1
-print("Первая задача")
-number = input("Введите число: ")
-res = 0
-for i in range(len(number)):
-    res += int(number[i])
-print(res)
+print("Первое задание")
+number = int(input("Введите число: "))
+if number % 2 == 0:
+    print("Данное число четное")
+else:
+    print("Данное число не является четным")
 # 2
-print("Вторая задача")
-n = int(input("Введите число: "))
-res = 1
-for i in range(1, n+1):
-    res *= i
-print(res)
+print("Второе задание")
+num_1 = int(input("Введите первое число: "))
+num_2 = int(input("Введите второе число: "))
+if num_1 > num_2:
+    print(num_1)
+elif num_1 < num_2:
+    print(num_2)
+else:
+    print(num_1, num_2)
 # 3
-print("Третья задача")
-n_2 = int(input("Введите число: "))
-for i in range(1, n_2+1):
-    if i % 7 == 0:
-        print(i)
+print("Третье задание")
+x = int(input("Введите первое число: ")) # Буквы на доске
+y = int(input("Введите второе число: ")) # Цифры на доске
+if x % 2 == 0 and y % 2 != 0:
+    print("YES")
+else:
+    print("NO")
